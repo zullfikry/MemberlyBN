@@ -1,0 +1,58 @@
+/* PaymentPage.css */
+
+.payment-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.back-arrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+.logo img {
+  display: block; 
+  max-width: 100px;
+  height: auto;
+}
+.payment-method-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+.payment-method-section {
+  text-align: center; 
+}
+
+.payment-method img {
+  max-width: 80px; 
+  height: auto; 
+}
+
+.payment-method {
+  display: flex;
+  justify-content: center; 
+}
+.card-details-section .form-control {
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+}

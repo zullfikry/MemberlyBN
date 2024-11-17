@@ -1,0 +1,76 @@
+/* Center the card container */
+.card-container {
+  display: flex;
+  justify-content: center; 
+}
+
+/* Card Background */
+.card-background {
+  background-color: #BDD5E7 !important; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+  width: 100%; 
+  margin: 20px; 
+  padding: 20px; 
+}
+
+/* Table Styling */
+.card-table {
+  background-color: inherit; 
+  border: none;
+  width: 100%; 
+}
+
+/* Table Headers */
+.card-table thead th {
+  background-color: inherit; 
+  color: #333333; 
+  border: none;
+}
+
+/* Table Cells */
+.card-table tbody td {
+  background-color: inherit; 
+  color: #333333; 
+  border: none;
+}
+
+/* Status Button */
+.status-button {
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  background-color: #cfe8f3; 
+  color: #333333;
+  border: 1px solid #BDD5E7;
+  border-radius: 5px;
+}
+
+/* Adjust table headers and cells for smaller screens */
+.card-table th, .card-table td {
+  text-align: left;
+  padding: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-background {
+    margin: 10px; 
+    padding: 10px; 
+  }
+
+  .card-table {
+    display: block; 
+    overflow-x: auto; 
+  }
+
+  .table {
+    width: 100%; 
+    table-layout: auto; 
+  }
+
+  /* Optional: Make checkboxes larger on mobile */
+  input[type="checkbox"] {
+    transform: scale(1.5); 
+  }
+}

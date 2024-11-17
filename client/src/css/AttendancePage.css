@@ -1,0 +1,31 @@
+
+body {
+  background-color: #f8f9fa; 
+}
+
+.container {
+  padding: 20px; 
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.verification-boxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+.verification-boxes .form-control {
+  margin: 0 5px; 
+  flex: 1; 
+}

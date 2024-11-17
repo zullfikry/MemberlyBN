@@ -1,0 +1,51 @@
+/* General Container Styles */
+.notification-container {
+  padding-top: 20px;
+}
+
+/* Back Arrow and Header */
+.notification-header {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-left: 10px;
+}
+
+/* Section Header Styles */
+.notification-section h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Description Text */
+.notification-section p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* Checkbox and Switch Styles */
+.notification-checkbox,
+.notification-switch {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.notification-checkbox .form-check-input,
+.notification-switch .form-check-input {
+  transform: scale(1.3); 
+  accent-color: #007bff; 
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+/* Additional Spacing and Alignment */
+.notification-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
+}

@@ -1,0 +1,62 @@
+/* LandingPage.css */
+
+.accordion-item {
+  transition: height 0.3s ease; 
+}
+
+.landing-page {
+  padding: 0;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.landing-header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.landing-message {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.proceed-button {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.offcanvas-button {
+  border: none;
+  background: transparent;
+  color: #333;
+}
+
+/* Membership option styling */
+.membership-option {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+
+.membership-option .price {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .landing-header {
+    font-size: 1.5rem;
+  }
+  .landing-message {
+    font-size: 1rem;
+  }
+  .proceed-button {
+    width: 100%;
+  }
+}
+

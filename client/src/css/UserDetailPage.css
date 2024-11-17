@@ -1,0 +1,86 @@
+/* Container styling */
+.container-fluid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Card header */
+.card-header {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Card body */
+.card-body {
+  padding: 2rem;
+}
+
+/* Form Styling */
+.form-control {
+  margin-bottom: 1.25rem;
+  border-radius: 5px;
+}
+
+/* Label styling */
+.form-label {
+  font-weight: bold;
+}
+
+/* Button Styling */
+button {
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Grid system for layout */
+.row {
+  margin-bottom: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .form-control {
+    margin-bottom: 1rem;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .d-flex button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .card-body {
+    padding: 3rem;
+  }
+
+  .form-control {
+    margin-bottom: 1.25rem;
+  }
+
+  .d-flex {
+    flex-direction: row;
+  }
+
+  .d-flex button {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
