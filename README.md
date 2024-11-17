@@ -11,3 +11,5 @@ On the second terminal
 2) Next, type : npm start , that will start the service
 3) That's it, now the terminal for the back end is started
 4) If you want to restart the terminal, press Ctrl + C
+
+After starting both terminal, the website now should be up and running.
