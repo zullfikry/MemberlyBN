@@ -11,14 +11,13 @@ import "../css/UserDashboard.css";
 import { useNavigate } from "react-router-dom";
 
 const UserDashboardPage = () => {
-  const navigate = useNavigate;
+  const navigate = useNavigate();
   const handleClick = () => {
     navigate('/notification', { replace: true }); 
   };
   const { user } = useContext(UserContext); 
   const [key, setKey] = useState("dashboard");
   
-  // Loading state if user data is not yet available
   if (!user) {
     return (
       <Container className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>

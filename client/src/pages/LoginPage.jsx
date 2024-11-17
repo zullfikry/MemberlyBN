@@ -1,12 +1,14 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Container, Button, Row, Col, Form } from "react-bootstrap";
 import { FaArrowLeft, FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../context/userContext";
 import axios from 'axios'
 import toast from "react-hot-toast";
 
 export default function LoginPage() {
+  const { setUser } = useContext(UserContext);
   const navigate = useNavigate()
   const [data, setData] = useState({
     email: "",
@@ -16,26 +18,25 @@ export default function LoginPage() {
 
   const loginUser = async (e) => {
     e.preventDefault();
-    const {email, password} = data
+    const { email, password } = data;
     try {
-      const {data} = await axios.post('/login', {
-        email,
-        password
-      })
-      if(data.error) {
-        toast.error(data.error)
+      const { data: responseData } = await axios.post('/login', { email, password });
+      
+      if (responseData.error) {
+        toast.error(responseData.error);
       } else {
-        setData({});
-        if (data.isAdmin) {
-          navigate('/admin-dashboard')
+        // Update the context with the logged-in user
+        setUser(responseData);  // Set user context here
+
+        if (responseData.isAdmin) {
+          navigate('/admin-dashboard');
         } else {
-          navigate('/landing')
-          window.location.reload() 
-        }  
+          navigate('/landing');
+        }
       }
     } catch (error) {
       console.error("Login error:", error);
-    toast.error("Something went wrong during login.");
+      toast.error("Something went wrong during login.");
     }
   };
 

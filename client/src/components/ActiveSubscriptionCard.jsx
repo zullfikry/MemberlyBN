@@ -22,7 +22,7 @@ const ActiveSubscriptionCard = () => {
     if (!isFrozen && !user.hasFrozen) {
       setShowFreezeModal(true);
     } else {
-      alert("You have already used your freeze option for this membership.");
+      toast.error("You have already used your freeze option for this membership.");
     }
   };
 
