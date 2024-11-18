@@ -36,3 +36,13 @@ Do take note that there is currently a known bug in the project.
 1) The bug is that after you freeze the account using the button on the user dasboard page, you may notice that you are not able to edit the notifications or profile.
 2) In order to fix this, simply sign out on the settings tab and sign in again with the same account.
 3) After signing in, you should now be able to update the profile and notifications once again.
+
+// Creating Admin User //
+
+If you are connecting to your own databse, there is no admin user by default.
+
+In Order to create an admin user, do the steps below:
+1) Login in to your mongodb atlas user.
+2) Go to your Project -> Cluster -> Overview Collection.
+3) Select a user from the database query, change `isAdmin` field to `true`.
+4) Okay that's it, now the admin can access the AdminDashboardPage and use it.
