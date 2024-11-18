@@ -7,7 +7,7 @@ For the .env file, this file is where the database connection is defined. I have
 ```env
 MONGO_URL = YOUR_CONNECTION_STRING
 JWT_SECRET = YOUR_JWT_SECRET_PASSWORD
-
+```
 3) The jwt_secret you can type anything for example: testing
 4) Now you have finished creating the .env file.
 
