@@ -30,7 +30,8 @@ On the second terminal
 
 After starting both terminal, the website now should be up and running.
 
-*KNOWN BUG*
+//KNOWN BUG//
+
 Do take note that there is currently a known bug in the project. 
 1) The bug is that after you freeze the account using the button on the user dasboard page, you may notice that you are not able to edit the notifications or profile.
 2) In order to fix this, simply sign out on the settings tab and sign in again with the same account.
