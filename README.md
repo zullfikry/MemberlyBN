@@ -3,7 +3,7 @@ In order to start the project, there are two main steps which is connecting the 
 For the .env file, this file is where the database connection is defined. The current version has a default .env file but if you want the project to connect to your own database, you can follow the steps below
 
 1) The first step is to create the database on mongoDB atlas. You can find the step-by-step here : https://www.mongodb.com/docs/guides/atlas/cluster/
-2) After getting the the connection string, copy paste it into the MONGo_URL. Set the following environment variables in your `.env` file:
+2) After getting the the connection string, copy paste it into the MONGO_URL. Set the following environment variables in your `.env` file:
 
 ```env
 MONGO_URL = YOUR_CONNECTION_STRING
