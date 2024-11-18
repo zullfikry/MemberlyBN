@@ -22,7 +22,7 @@ On the first terminal
 6) If you want to restart the terminal, press Ctrl + C
 
 On the second terminal
-1) Change to server directories by typing in the terminal : cd server
+1) Change to server directories by typing in the terminal : `cd server`
 2) Install the `packages` : ``` npm install ```
 3) Next, `type` : ```npm start``` , that will start the service
 4) That's it, now the terminal for the back end is started
