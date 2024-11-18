@@ -3,8 +3,10 @@ In order to start the project, there are two main steps which is creating a .env
 For the .env file, this file is where the database connection is defined. I have not included it in the project repository due to security reason.
 1) The first step is to create the database on mongoDB atlas. You can find the step-by-step here : https://www.mongodb.com/docs/guides/atlas/cluster/
 2) After getting the the connection string, copy paste it into the MONGo_URL. The .env file should look something like this :
+
 MONGO_URL = YOUR_CONNECTION_STRING
 JWT_SECRET = YOUR_JWT_SECRET_PASSOWRD
+
 3) The jwt_secret you can type anything for example: testing
 4) Now you have finished creating the .env file.
 
